@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('Run Test') {
-      steps {
-        sh 'mvn test'
+      parallel {
+        stage('Run Test') {
+          steps {
+            sh 'mvn test'
+          }
+        }
+
+        stage('Clean Package') {
+          steps {
+            sh 'mvn clean package -Dmaven.test.skip'
+          }
+        }
+
       }
     }
 
