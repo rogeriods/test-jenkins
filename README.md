@@ -8,6 +8,6 @@ The following was discovered as part of building this project:
 
 ## Prints
 
-![Print 1](/resources/jenk1.png "Print 1")
+![Print 1](/resources/jenk1.PNG "Print 1")
 
-![Print 2](/resources/jenk2.png "Print 2")
+![Print 2](/resources/jenk2.PNG "Print 2")
